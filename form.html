@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        .garis {
+            border: solid rgba(91, 82, 82, 0.493) 2px ;
+            width: 300px;
+            height: 380px;
+        }
+        .formulir {
+            font: normal normal bold 25px/18px "times new romans", serif;
+            padding: 10px 0px 5px 5px;
+        }
+        .isi {
+            padding: 30px 0px 0px 5px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="garis">
+        <div class="formulir">
+            Formulir Biodata
+        </div>
+        <form action="/submit-url-here" method="post">
+            <div class="isi">
+                <table>
+                    <tr>
+                        <td><label for="Nama">Nama</label></td>
+                        <td>: <input type="text" id="Nama"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Nim">Nim</label></td>
+                        <td>: <input type="text" id="Nim"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Jurusan">Jurusan</label></td>
+                        <td>: <input type="text" id="Jurusan"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Fakultas">Fakultas</label></td>
+                        <td>: <select name="Fakultas" id="Fakultas">
+                            <option value="Fakultas">Fakultas Ilmu Komputer</option>
+                            <option value="Fakultas">Ekonomi dan Bisnis</option>
+                            <option value="Fakultas">Ilmu Budaya</option>
+                            <option value="Fakultas">Kesehatan</option>
+                            <option value="Fakultas">Teknik</option>
+                            <option value="Fakultas">Kedokteran</option>
+                </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Angkatan">Angkatan</label></td>
+                        <td>: <input type="text" id="Angkatan"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Jenis Kelamin</label></td>
+                        <td>:
+                            
+                            <input type="radio" id="Pria" name="gender">
+                        <label for="Pria">Pria</label>
+                
+                        <input type="radio" id="Wanita" name="gender">
+                        <label for="Wanita">Wanita</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Email">Email</label></td>
+                        <td>: <input type="email" id="Email"></td>
+                    </tr>
+                </table>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button><a href="biodata.html">Biodata</a></button>
+                        </div>
+            </form>
+    </div>
+
+
+    
+</body>
+</html>
